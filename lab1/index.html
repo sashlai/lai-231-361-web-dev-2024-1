@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Домашняя страница</title>
+
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        table, th, td {
+            border: 1px solid;
+        }
+
+        th, td {
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Добро пожаловать!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#service">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Автомастерская</h2>
+        <p>Мы предлагаем лучшие услуги на рынке!</p>
+        <img src="https://avatars.mds.yandex.net/get-altay/1547687/2a0000016bbc8ef2d104e3c684073a03e3fb/XXL_height">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Запчасть</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Фары</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Двигатель</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Колеса</td>
+                    <td>$30</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ваша Компания. Все права защищены.</p>
+        <p>Контактная информация: 123@company.com | Телефон: +0 (123) 456-7890</p>
+    </footer>
+</body>
+</html>
