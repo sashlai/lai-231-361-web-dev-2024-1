@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Формы обратной связи</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: url('https://cdn.ingos.ru/images/blog/samye-dorogie-avtomobili_shut.jpg') ;
+        }
+
+        .contact-form, .auth-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: 20px auto;
+        }
+
+        .contact-form h2, .auth-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="email"], input[type="name"],  textarea, select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 30%;
+            background-color: bisque;
+            border-radius: 3px;
+            border-width: 1px;
+            text-align: center;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать!</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="auth-form.html">Авторизоваться</a></li>
+                <li><a href="contact-form.html">Обратная связь</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-form">
+        <h2>Форма обратной связи</h2>
+        <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
+            <p><strong>ФИО:</strong></p>
+            <input type="text" maxlength="25" size="40" name="name">
+
+            <p><strong>Email:</strong></p>
+            <input type="email" id="email" name="email" required>
+
+            <p><strong>Откуда узнали о нас:</strong></p>
+            <div class="radio-group">
+                <p><input type="radio" name="source" value="интернет"> Интернет</p>
+                <p><input type="radio" name="source" value="реклама"> Реклама</p>
+                <p><input type="radio" name="source" value="друзья"> Друзья</p>
+            </div>
+
+            <p><strong>Тип обращения:</strong></p>
+            <select id="type" name="type">
+                <option disabled>Выберите тип обращения</option>
+                <option value="жалоба">Жалоба</option>
+                <option selected value="предложение">Предложение</option>
+            </select>
+
+            <p><strong>Текст сообщения:</strong></p>
+            <textarea name="сообщение" cols="40"  rows="3"></textarea>
+
+            <p><strong>Вложения:</strong></p>
+            <input type="file" name="file">
+
+            <p><input type="checkbox" name="согласие">Даю согласие на обработку персональных данных</p>
+
+            <div class="button">
+            <p><input type="submit" value="Отправить"></p>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ваша Компания. Все права защищены.</p>
+        <p>Контактная информация: 123@company.com | Телефон: +0 (123) 456-7890</p>
+    </footer>
+</body>
+</html>
